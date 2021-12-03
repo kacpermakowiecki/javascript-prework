@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;700&display=swap');
+
+body{
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background-color:#172038;
+    color:white;
+    background-image: url("/javascript-prework/images/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg");
+    background-size: cover;
+}
+
+/*body */
+
+.body-head {
+    background-color: #4b5d8e;
+    width: 50px auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0.5;
+}
+
+.body-head h1{
+    margin-bottom: 0;
+}
+
+.body-head p {
+    margin-top: 0;
+
+}
+
+.body-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 500px;
+    margin: 200px auto;
+    background-color: #86a0e6;
+    border-radius: 50px;
+    opacity: 0.9;
+
+}
+
+/*buttons*/
+
+.buttons button {
+    background-color: transparent;
+    border: 2px solid #172038;
+    padding: 14px 40px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 10px;
+    color:#172038;
+}
+
+.buttons button:hover {
+    color: white;
+    border: 2px double white;
+    text-transform: uppercase;
+}
+
+.body-container h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.messages {
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
