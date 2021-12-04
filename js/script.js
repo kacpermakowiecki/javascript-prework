@@ -1,3 +1,8 @@
+
+const buttonRock = document.getElementById('button-rock');
+const buttonPaper = document.getElementById('button-paper');
+const buttonScissors = document.getElementById('button-scissors');
+
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
@@ -48,7 +53,5 @@ function buttonClicked(argButtonName) {
 
 
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień') });
-
 buttonPaper.addEventListener('click', function(){ buttonClicked('papier') });
-
 buttonScissors.addEventListener('click', function(){ buttonClicked('nozyce') });
