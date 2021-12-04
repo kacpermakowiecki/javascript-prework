@@ -32,21 +32,21 @@ function buttonClicked(argButtonName) {
   function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
-    printMessage('Przegrywasz!');
+    printMessage('Wygrywasz!');
   } else if (argPlayerMove == 'papier' && argComputerMove =='nozyce') {
-    printMessage ('Wygrywasz!');
-  } else if (argPlayerMove == 'nozyce' && argComputerMove =='papier') {
     printMessage ('Przegrywasz!');
-  } else if (argPlayerMove == 'nozyce' && argComputerMove =='kamień') {
+  } else if (argPlayerMove == 'kamień' && argComputerMove =='nozyce') {
     printMessage ('Wygrywasz!');
-  } else if (argPlayerMove == 'kamień' && argComputerMove == 'papier') {
-	printMessage ('Wygrywasz!');
+  } else if (argPlayerMove == 'nozyce' && argComputerMove =='kamień') {
+    printMessage ('Przegrywasz!');
+  } else if (argPlayerMove == 'nozyce' && argComputerMove =='papier') {
+    printMessage ('Wygrywasz!');
   } else if (argPlayerMove == argComputerMove ) {
 	printMessage ('Remis');
   } else {
     printMessage('Przegrywasz :(');
   }
-  printMessage('Zagrałem ' + argPlayerMove + ', a Ty ' + argComputerMove);
+  printMessage('Zagrałem ' + argComputerMove + ', a Ty ' +argPlayerMove );
   }
   
   playerMove = argButtonName;
