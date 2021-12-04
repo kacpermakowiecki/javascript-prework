@@ -1,52 +1,41 @@
-var argButtonName, buttonRock;
-buttonRock = document.getElementById('button-rock');
-var argButtonName, buttonRock;
-buttonPaper = document.getElementById('button-paper');
-var argButtonName, buttonScissors;
-buttonScissors = document.getElementById('button-scissors');
-
-
-/**
- * Describe this function...
- */
- var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
-
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
+  
+  let playerMove, randomNumber, computerMove;
 
   function getMoveName(argMoveId) {
-  console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
-  if (argMoveId == 1) {
+    console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
+    if (argMoveId == 1) {
     return 'kamień';
-  } else if (argMoveId == 2) {
+    } else if (argMoveId == 2) {
 	  return 'papier';
-  } else if (argMoveId == 3) {
+    } else if (argMoveId == 3) {
 	  return 'nozyce'
-  } else {
+    } else {
     printMessage('Nie znam ruchu o id ' + argMoveId + '. Zakładam, że chodziło o "kamień".');
     return 'kamień';
-  }
+    }
   }
 
   function displayResult(argPlayerMove, argComputerMove) {
-  console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
-  if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
+    console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
+    if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
     printMessage('Wygrywasz!');
-  } else if (argPlayerMove == 'papier' && argComputerMove =='nozyce') {
+    } else if (argPlayerMove == 'papier' && argComputerMove =='nozyce') {
     printMessage ('Przegrywasz!');
-  } else if (argPlayerMove == 'kamień' && argComputerMove =='nozyce') {
+    } else if (argPlayerMove == 'kamień' && argComputerMove =='nozyce') {
     printMessage ('Wygrywasz!');
-  } else if (argPlayerMove == 'nozyce' && argComputerMove =='kamień') {
+    } else if (argPlayerMove == 'nozyce' && argComputerMove =='kamień') {
     printMessage ('Przegrywasz!');
-  } else if (argPlayerMove == 'nozyce' && argComputerMove =='papier') {
+    } else if (argPlayerMove == 'nozyce' && argComputerMove =='papier') {
     printMessage ('Wygrywasz!');
-  } else if (argPlayerMove == argComputerMove ) {
-	printMessage ('Remis');
-  } else {
+    } else if (argPlayerMove == argComputerMove ) {
+	  printMessage ('Remis');
+    } else {
     printMessage('Przegrywasz :(');
-  }
-  printMessage('Zagrałem ' + argComputerMove + ', a Ty ' +argPlayerMove );
+    }
+    printMessage('Zagrałem ' + argComputerMove + ', a Ty ' +argPlayerMove );
   }
   
   playerMove = argButtonName;
@@ -57,6 +46,9 @@ function buttonClicked(argButtonName) {
   displayResult(playerMove, computerMove);
 }
 
+
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień') });
+
 buttonPaper.addEventListener('click', function(){ buttonClicked('papier') });
+
 buttonScissors.addEventListener('click', function(){ buttonClicked('nozyce') });
