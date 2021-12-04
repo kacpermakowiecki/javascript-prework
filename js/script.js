@@ -1,13 +1,11 @@
 
-const buttonRock = document.getElementById('button-rock');
-const buttonPaper = document.getElementById('button-paper');
-const buttonScissors = document.getElementById('button-scissors');
+
 
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
   
-  let playerMove, randomNumber, computerMove;
+  const playerMove, randomNumber, computerMove;
 
   function getMoveName(argMoveId) {
     console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
@@ -51,7 +49,9 @@ function buttonClicked(argButtonName) {
   displayResult(playerMove, computerMove);
 }
 
-
+const buttonRock = document.getElementById('button-rock');
+const buttonPaper = document.getElementById('button-paper');
+const buttonScissors = document.getElementById('button-scissors');
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień') });
 buttonPaper.addEventListener('click', function(){ buttonClicked('papier') });
 buttonScissors.addEventListener('click', function(){ buttonClicked('nozyce') });
