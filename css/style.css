@@ -1,85 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;700&display=swap');
-
-body{
-    font-family: 'Chakra Petch', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;700&display=swap");
+body {
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 .container {
-    height: 100vh;
-    background-color:#172038;
-    color:white;
-    background-image: url("/Users/kacper/Desktop/Kodila/javascript-prework/javascript-prework/images/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg");
-    background-size: cover;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  height: 100vh;
+  background-color: #172038;
+  color: white;
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /*body */
-
 .body-head {
-    background-color: #4b5d8e;
-    min-width: 500px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    opacity: 0.8;
-    border-radius: 10px;
+  background-color: #4b5d8e;
+  min-width: 500px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0.8;
+  border-radius: 10px;
 }
 
-.body-head h1{
-    margin-bottom: 0;
+.body-head h1 {
+  margin-bottom: 0;
 }
 
 .body-head p {
-    margin-top: 0;
-    color:#f123ad;
-
+  margin-top: 0;
+  color: #f123ad;
 }
 
 .body-container {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    width: 500px;
-    margin: 200px auto;
-    background-color: #86a0e6;
-    border-radius: 50px;
-    opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 500px;
+  margin: 200px auto;
+  background-color: #86a0e6;
+  border-radius: 50px;
+  opacity: 0.9;
 }
 
 /*buttons*/
-
 .buttons button {
-    background-color: transparent;
-    border: 2px solid #f123ad;
-    padding: 14px 40px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    border-radius: 10px;
-    color:#f123ad;
+  background-color: transparent;
+  border: 2px solid #f123ad;
+  padding: 14px 40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  color: #f123ad;
 }
 
 .buttons button:hover {
-    color: white;
-    border: 2px double #f123ad;
-    text-transform: uppercase;
+  color: white;
+  border: 2px double #f123ad;
+  text-transform: uppercase;
 }
 
 .body-container h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 35px;
-    color:white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: white;
 }
 
 .messages {
-    text-align: center;
-    margin-top: 20px;
-    text-transform: uppercase;
-    color:black;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: black;
 }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSw4RkFBWTtBQUVaO0VBQ0ksdUNBQXVDO0FDQTNDOztBREdBO0VBQ0ksYUFBYTtFQUNiLHlCQUF3QjtFQUN4QixZQUFXO0VBQ1gsK0NBQStDO0VBQy9DLHNCQUFzQjtFQUN0QixhQUFZO0VBQ1osbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2QixzQkFBc0I7QUNBMUI7O0FER0EsUUFBQTtBQUVBO0VBQ0kseUJBQXlCO0VBQ3pCLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsc0JBQXNCO0VBQ3RCLFlBQVk7RUFDWixtQkFBbUI7QUNEdkI7O0FESUE7RUFDSSxnQkFBZ0I7QUNEcEI7O0FESUE7RUFDSSxhQUFhO0VBQ2IsY0FBYTtBQ0RqQjs7QURLQTtFQUNJLGFBQVk7RUFDWixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2QixhQUFhO0VBQ2IsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQix5QkFBeUI7RUFDekIsbUJBQW1CO0VBQ25CLFlBQVk7QUNGaEI7O0FES0EsVUFBQTtBQUVBO0VBQ0ksNkJBQTZCO0VBQzdCLHlCQUF5QjtFQUN6QixrQkFBa0I7RUFDbEIsNkVBQXVFO0VBQ3ZFLG1CQUFtQjtFQUNuQixjQUFhO0FDSGpCOztBRE1BO0VBQ0ksWUFBWTtFQUNaLDBCQUEwQjtFQUMxQix5QkFBeUI7QUNIN0I7O0FETUE7RUFDSSxrQkFBa0I7RUFDbEIseUJBQXlCO0VBQ3pCLGVBQWU7RUFDZixZQUFXO0FDSGY7O0FETUE7RUFDSSxrQkFBa0I7RUFDbEIsZ0JBQWdCO0VBQ2hCLHlCQUF5QjtFQUN6QixZQUFXO0FDSGYiLCJmaWxlIjoic3R5bGUuY3NzIn0= */

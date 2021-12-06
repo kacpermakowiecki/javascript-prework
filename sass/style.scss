@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;700&display=swap');
+
+body{
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background-color:#172038;
+    color:white;
+    background-image: url("/images/background.jpg");
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*body */
+
+.body-head {
+    background-color: #4b5d8e;
+    min-width: 500px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.body-head h1{
+    margin-bottom: 0;
+}
+
+.body-head p {
+    margin-top: 0;
+    color:#f123ad;
+
+}
+
+.body-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 500px;
+    margin: 200px auto;
+    background-color: #86a0e6;
+    border-radius: 50px;
+    opacity: 0.9;
+}
+
+/*buttons*/
+
+.buttons button {
+    background-color: transparent;
+    border: 2px solid #f123ad;
+    padding: 14px 40px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 10px;
+    color:#f123ad;
+}
+
+.buttons button:hover {
+    color: white;
+    border: 2px double #f123ad;
+    text-transform: uppercase;
+}
+
+.body-container h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    color:white;
+}
+
+.messages {
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color:black;
+}
